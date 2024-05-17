@@ -1018,49 +1018,6 @@ Alternative DNS Root, and ByStar Digital Currency are some examples.
    :CUSTOM_ID: CurrentByStarServicesAndCapabilities
    :END:
 
-<!-- ####+BEGIN: bx:dblock:global:file-insert :file
-"./bxEntityCapabilities-body-680.html" --> <table style= "border: 2px
-solid black; vertical-align: middle; width: 680px; height: 270px;"
-cellspacing="0"> <tbody> <tr> <td style="font-size: 11pt;
-background-color: rgb(240, 255, 255); text-align: center;">
-Foundational: </td> <td style="background-color: rgb(240, 255, 255);
-text-align: center;"> ByStarEntityID &nbsp; &nbsp; Shell Less Unix
-Account <br> &nbsp; &nbsp; PKCS Credentials <br> Matched UE Profile
-&nbsp; &nbsp; Autonomy Assertion Virtual Box </td> </tr> <tr> <td style=
-"background-color: #cccccc; text-align: center; height: 0px;"
-colspan="8"> <hr> </td> </tr> <tr> <td style="font-size: 11pt;
-background-color: rgb(255, 239, 213); text-align: center;"> Personal
-Communication: </td> <td style="background-color: rgb(255, 239, 213);
-text-align: center;">
-
-<a style="color: rgb(255, 99, 33);"
-href="http://www.by-star.net/PLPC/180039"> Email, Messaging, </a> &nbsp
-<a style="color: rgb(255, 99, 33);"
-href="http://www.by-star.net/PLPC/180039"> LibreTexting </a> </td> </tr>
-</tr> <tr> <td style= "background-color: #cccccc; text-align: center;
-height: 1px;" colspan="8"> <hr> </td> </tr> <tr> <td style="font-size:
-11pt; background-color: rgb(255, 250, 205); text-align: center;"> Web
-Features: </td> <td style="background-color: rgb(255, 250, 205);
-text-align: center;"> <a style="color: rgb(255, 99, 33);"
-href="http://www.by-star.net/PLPC/180038"> Plone (CMS), </a> &nbsp <a
-style="color: rgb(255, 99, 33);"
-href="http://www.by-star.net/PLPC/180038"> Galleries </a> <br> <a
-style="color: rgb(255, 99, 33);"
-href="http://www.by-star.net/PLPC/180038"> Autonomous Self-Publication
-</a> &nbsp <a style="color: rgb(255, 99, 33);"
-href="http://www.by-star.net/PLPC/180038"> Genealogy, </a> &nbsp <a
-style="color: rgb(255, 99, 33);"
-href="http://www.by-star.net/PLPC/180038"> WebMail </a> </td> </tr> <tr>
-<td style= "background-color: #cccccc; text-align: center; height: 0px;"
-colspan="8"> <hr> </td> </tr> <tr> <td style= "font-size: 11pt;
-background-color: rgb(205, 226, 167); text-align: center; height:
-35px;"> Private Network: </td> <td style="background-color: rgb(205,
-226, 167); text-align: center;"> Private Disk/Storage &nbsp Private Sync
-(Version Control) <br> ByStar Overlay Network Id </td> </tr> </tbody>
-</table>
-
-<!-- ####+END: -->
-
 ByStar Services are vast in scope. They are designed to be ever growing.
 Basic structures of ByStar are in place and many services are built or
 partially built. The Libre-Halaal Services collaborative framework
@@ -1895,60 +1852,6 @@ with.
   :PROPERTIES:
   :CUSTOM_ID: joining-bystar
   :END:
-
-<!-- ####+BEGIN: bx:dblock:global:file-insert :file
-"./joiningByStar-body-680.html" --> <table style= "border: 2px solid
-black; vertical-align: middle; width: 680px; height: 80px;"
-cellspacing="0"> <tbody> <tr> <td style= "vertical-align: middle;
-text-align: center; background-color: rgb(255, 239, 160); height: 25px;
-width: 100px;"> Joining </td> <td style="background-color: rgb(105, 226,
-167);" colspan="1"> &nbsp; </td> <td style= "font-size: 11pt;
-background-color: rgb(105, 226, 167); text-align: center; height: 25px;"
-colspan="6"> <b> A Strategy For <br> Rapidly Becoming An Internet
-Application Service Provider </b> </td> </tr> <tr> <td style=
-"vertical-align: middle; text-align: center; background-color: rgb(255,
-239, 160); height: 25px; width: 100px;"> ByStar </td> <td
-style="background-color: rgb(105, 226, 167);" colspan="1"> &nbsp; </td>
-<td style="background-color: rgb(105, 226, 167); text-align: center;">
-Joining, Adopting and/or Licensing ByStar </td> </tr> <tr> <td style=
-"vertical-align: middle; text-align: center; background-color: rgb(255,
-239, 160); height: 25px; width: 100px;"> As A Group </td> <td
-style="background-color: rgb(105, 226, 167);" colspan="1"> </td> <td
-style="background-color: rgb(105, 226, 167); text-align: center;"> <a
-style="color: rgb(255, 24, 21);"
-href="http://www.by-star.net/PLPC/180040/"> A Public Unsolicited
-Proposal </a> </td> </tr> </tbody> </table>
-
-<table style= "border: 2px solid black; vertical-align: middle; width:
-680px; height: 120px;" cellspacing="0"> <tbody> <tr> <td style=
-"vertical-align: middle; text-align: center; background-color: rgb(255,
-239, 160); height: 45px; width: 100px;"> &nbsp; </td> <td
-style="background-color: rgb(205, 226, 167);" colspan="1"> &nbsp; </td>
-<td style= "font-size: 11pt; background-color: rgb(205, 226, 167);
-text-align: left; height: 45px;" colspan="6"> <a style="color: rgb(255,
-99, 33);" href="http://www.by-star.net/PLPC/180016/"> (1) Recognize
-Importance Of Your Privacy and Autonomy </a> </td> </tr> <tr> <td style=
-"vertical-align: middle; text-align: center; background-color: rgb(255,
-239, 160); height: 45px; width: 100px;"> Joining </td> <td
-style="background-color: rgb(240, 255, 255);" colspan="1"> &nbsp; </td>
-<td style="background-color: rgb(240, 255, 255); text-align: left;"> <a
-style="color: rgb(165, 24, 21);" href="http://www.byname.net/"> (2)
-Obtain Your Private ByStar Account </a> </td> </tr> <tr> <td style=
-"vertical-align: middle; text-align: center; background-color: rgb(255,
-239, 160); height: 45px; width: 100px;"> ByStar </td> <td
-style="background-color: rgb(255, 239, 213);" colspan="1"> &nbsp; </td>
-<td style="background-color: rgb(255, 239, 213); text-align: left;"> <a
-style="color: rgb(255, 24, 21);" href="http://www.bybinary.org/"> (3)
-Obtain Your By*-Autonomous-Server (or Virtual-Server) </a> </td> </tr>
-<tr> <td style="vertical-align: middle; text-align: center;
-background-color: rgb(255, 239, 160); height: 45px;"> Individually </td>
-<td style="background-color: rgb(255, 250, 205);" colspan="1"> &nbsp;
-</td> <td style="background-color: rgb(255, 250, 205); text-align:
-left;"> <a style="color: rgb(255, 99, 33);"
-href="http://www.by-star.net/PLPC/180004/"> (4) Fully Control Your By*
-Account and Your Autonomous Service </a> </td> </tr> </tbody> </table>
-
-<!-- ####+END: -->
 
 Successful Digital Ecosystems are dynamic. They grow and are ever
 evolving.
