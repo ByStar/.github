@@ -2,26 +2,37 @@
 #+DATE: <2024-02-19 Mon 16:27>
 #+AUTHOR: Mohsen BANAN
 
-* Overview
 
-The *Libre-Halaal ByStar Digital Ecosystem* (/By* DE/) is an interdisciplinary, and
-ethics-oriented non-proprietary digital ecosystem which challenges the existing
-proprietary American digital ecosystem while operating concurrently alongside
-it. On a global scale, By* provide Internet Application Services which preserve
-autonomy and privacy of the individual. *BISOS*: (/By* Internet Services Operating
-System/) is a unified and universal framework for developing both internet
-services and software-service continuums that use internet services. BISOS is a
-layer on top of Debian. *Blee*: (/BISOS Libre-Halaal Emacs Environment/) is a layer
-on top of Emacs and BISOS, which creates a comprehensive integrated usage and
-development environment. Blee and BISOS are fully integrated. See the "*Nature of
-Polyexistentials*" book for the bigger picture of how all of ByStar fits together.
+The *Libre-Halaal ByStar Digital Ecosystem* (/By* DE/) is an interdisciplinary,
+and ethics-oriented non-proprietary digital ecosystem which challenges the
+existing proprietary American digital ecosystem while operating concurrently
+alongside it. On a global scale, By* provide Internet Application Services which
+preserve autonomy and privacy of the individual. *BISOS*:
+([[https://github.com/bisos][By* Internet Services Operating System]])
+is a unified and universal framework for developing both
+internet services and software-service continuums that use internet services.
+BISOS is a layer on top of Debian. *Blee*:
+([[https://github.com/bx-blee][BISOS Libre-Halaal Emacs Environment]])
+is a layer on top of Emacs and BISOS, which creates a
+comprehensive integrated usage and development environment. Blee and BISOS are
+fully integrated. See the
+[[https://github.com/bxplpc/120033][Nature of Polyexistentials]]
+book for the bigger picture of how all of ByStar fits together. Some of the
+material on this page has been taken from that book.
 
 For bootstraping BISOS, Blee and ByStar; you can start at: https://github.com/bxgenesis/start
 
-Here we produce the basic concepts of BISOS.
+Here we provide some pointers to related ByStar github organizations and various
+ByStar git Repos and introduce the basic concepts of ByStar.
+
 
 * Table of Contents     :TOC:
-- [[#overview][Overview]]
+- [[#bystar-related-github-organizations][ByStar Related Github Organizations]]
+  - [[#bisos][BISOS]]
+  - [[#bisos-pip----][BISOS-PIP ---]]
+    - [[#pycs-python-command-servicesbisoss-integration-framework][PyCS (Python Command Services):BISOS's Integration Framework]]
+  - [[#blee][Blee]]
+  - [[#bxgenesis][BxGenesis]]
 - [[#the-libre-halaal-bystar-digital-ecosystem][The Libre-Halaal ByStar Digital Ecosystem]]
   - [[#bystar-ideology-the-libre-halaal-philosophy][ByStar Ideology: The Libre-Halaal Philosophy]]
     - [[#halaal-and-haraam-and-the-libre-halaal-label][Halaal and Haraam and the Libre-Halaal Label]]
@@ -87,6 +98,22 @@ Here we produce the basic concepts of BISOS.
 - [[#joining-bystar][Joining ByStar]]
   - [[#individually][Individually]]
   - [[#en-masse][En Masse]]
+
+* ByStar Related Github Organizations
+** BISOS
+See  https://github.com/ByStar  -- file:/bisos/git/bxRepos/ByStar/
+** BISOS-PIP ---
+See  https://github.com/bisos-pip  -- file:/bisos/git/bxRepos/bisos-pip
+*** PyCS (Python Command Services):BISOS's Integration Framework
+See  https://github.com/bisos-pip/b  -- file:/bisos/git/bxRepos/bisos-pip/b
+** Blee
+** BxGenesis
+
+# * BISOS Git Repos
+# ** bisos/bsip repo -- =/bisos/core/bsip= -- BISOS Shell Integration Platform
+# See  https://github.com/bisos/bsip  -- file:/bisos/git/bxRepos/bisos/bsip4/
+# ** bisos/bpip-- BISOS Python Integration Platform
+#  [[https://github.com/bisos/bsip][bisos/bsip]]
 
 * The Libre-Halaal ByStar Digital Ecosystem
 
