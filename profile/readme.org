@@ -1,0 +1,2001 @@
+#+TITLE: Libre-Halaal ByStar Digital Ecosystem
+#+DATE: <2024-02-19 Mon 16:27>
+#+AUTHOR: Mohsen BANAN
+
+* Overview
+
+The *Libre-Halaal ByStar Digital Ecosystem* (/By* DE/) is an interdisciplinary, and
+ethics-oriented non-proprietary digital ecosystem which challenges the existing
+proprietary American digital ecosystem while operating concurrently alongside
+it. On a global scale, By* provide Internet Application Services which preserve
+autonomy and privacy of the individual. *BISOS*: (/By* Internet Services Operating
+System/) is a unified and universal framework for developing both internet
+services and software-service continuums that use internet services. BISOS is a
+layer on top of Debian. *Blee*: (/BISOS Libre-Halaal Emacs Environment/) is a layer
+on top of Emacs and BISOS, which creates a comprehensive integrated usage and
+development environment. Blee and BISOS are fully integrated. See the "*Nature of
+Polyexistentials*" book for the bigger picture of how all of ByStar fits together.
+
+For bootstraping BISOS, Blee and ByStar; you can start at: https://github.com/bxgenesis/start
+
+Here we produce the basic concepts of BISOS.
+
+* Table of Contents     :TOC:
+- [[#overview][Overview]]
+- [[#the-libre-halaal-bystar-digital-ecosystem][The Libre-Halaal ByStar Digital Ecosystem]]
+  - [[#bystar-ideology-the-libre-halaal-philosophy][ByStar Ideology: The Libre-Halaal Philosophy]]
+    - [[#halaal-and-haraam-and-the-libre-halaal-label][Halaal and Haraam and the Libre-Halaal Label]]
+    - [[#guardianship-of-internet-by-the-engineering-profession][Guardianship of Internet by the Engineering Profession]]
+    - [[#nature-of-polyexistentials-basis-for-abolishment-of-western-ipr][Nature of Polyexistentials: Basis for Abolishment of Western IPR]]
+    - [[#libre-halaal-software----halaal-manner-of-existence-of-software][Libre-Halaal Software -- Halaal Manner-of-Existence of Software]]
+    - [[#libre-halaal-internet-services----halaal-manner-of-existence-of][Libre-Halaal Internet Services -- Halaal Manner-of-Existence of]]
+  - [[#applied-model-offederations-of-autonomous-libre-services][Applied Model ofFederations of Autonomous Libre Services]]
+    - [[#the-bystar-reference-model][The ByStar Reference Model]]
+    - [[#domain-name-bindings-of-bystarentity][Domain Name Bindings of ByStarEntity]]
+    - [[#bystar-autonomous-services][ByStar Autonomous Services]]
+    - [[#bystar-controlled-services----internet-of-things][ByStar Controlled Services -- Internet of Things]]
+    - [[#bystar-federated-services][ByStar Federated Services]]
+    - [[#bystar-convivial-user-environments----blee][ByStar Convivial User Environments -- Blee]]
+    - [[#bystar-content-generation-and-content-publication-facilities][ByStar Content Generation and Content Publication Facilities]]
+  - [[#bystar-architecture-principles][ByStar Architecture Principles]]
+    - [[#tools-for-conviviality][Tools for Conviviality]]
+    - [[#bystar-end-to-end-philosophy-vs-rise-of-the-middle][ByStar End-To-End Philosophy vs Rise of the Middle]]
+    - [[#choice-of-software-components][Choice of Software Components]]
+    - [[#confidentiality-anonymity-and-privacy][Confidentiality, Anonymity and Privacy]]
+  - [[#bystar-central][ByStar Central]]
+    - [[#libre-halaal-foundation---non-profit-non-proprietary][Libre-Halaal Foundation - non-profit, non-proprietary]]
+    - [[#neda-communications-inc----for-profit-non-proprietary][Neda Communications, Inc. -- for-profit, non-proprietary]]
+    - [[#librecenternet][LibreCenter.net]]
+    - [[#bysourceorg][BySource.org]]
+    - [[#bybinaryorg][ByBinary.org]]
+    - [[#bystar-name-and-number-assignment-authority][ByStar Name and Number Assignment Authority]]
+  - [[#current-bystar-services-and-capabilities][Current ByStar Services and Capabilities]]
+    - [[#current-capabilities-of-bystarentity][Current Capabilities of ByStarEntity]]
+    - [[#current-bystar-services-sites][Current ByStar Services Sites]]
+  - [[#relationship-with-existing-realities][Relationship With Existing Realities]]
+    - [[#relationship-with-the-proprietary-american-digital-ecosystem][Relationship With the Proprietary American Digital Ecosystem]]
+    - [[#relationship-with-foss--floss-movements][Relationship With FOSS / FLOSS Movements]]
+    - [[#active-private-parallel-digital-ecosystems----example-nsa][Active Private Parallel Digital Ecosystems -- Example: NSA]]
+    - [[#relationship-with-piecemeal-privacy-oriented-software-and-services][Relationship With Piecemeal Privacy Oriented Software and Services]]
+  - [[#understanding-the-full-bystar-picture][Understanding the Full ByStar Picture]]
+- [[#bystarentity-realization-models----by-way-of-some-examples][ByStarEntity Realization Models--- By Way of Some Examples]]
+  - [[#bystarentityid-registrations][ByStarEntityId Registrations]]
+  - [[#shared-cloud-autonomous-model][Shared Cloud Autonomous Model]]
+  - [[#hosted-private-cloud-autonomous-model][Hosted Private Cloud Autonomous Model]]
+    - [[#obtaining-a-generic-bystarautonomyassertionvirtualmachine][Obtaining A Generic ByStarAutonomyAssertionVirtualMachine]]
+    - [[#adding-bystarentitys-to-the-generic][Adding ByStarEntitys to the Generic]]
+    - [[#choosing-a-bystar-private-cloud-provider----eg-librecenternet][Choosing A ByStar Private Cloud Provider -- e.g. LibreCenter.net]]
+    - [[#running-your-bystarautonomyassertionvirtualmachine][Running Your ByStarAutonomyAssertionVirtualMachine]]
+  - [[#premise-private-cloud-autonomous-model][Premise Private Cloud Autonomous Model]]
+    - [[#obtaining-a-premise-bystar-host][Obtaining a Premise ByStar Host]]
+    - [[#preparing-the-bystarautonomyassertionvirtualmachine][Preparing the ByStarAutonomyAssertionVirtualMachine]]
+    - [[#running-the-premise-bystarautonomyassertionvirtualmachine][Running the Premise ByStarAutonomyAssertionVirtualMachine]]
+  - [[#bystar-autonomous-services-use-and-access-examples][ByStar Autonomous Services Use and Access Examples]]
+    - [[#browser-based-web-service-usage][Browser Based Web Service Usage]]
+    - [[#blee-based-software-service-continuum-usage][Blee Based Software-Service Continuum Usage]]
+  - [[#some-examples-of-bystar-autonomous-services-capabilities][Some Examples of ByStar Autonomous Services Capabilities]]
+    - [[#bystar-email-messaging][ByStar Email (Messaging)]]
+    - [[#bystar-public-and-private-web-presence-services][ByStar Public and Private Web Presence Services]]
+    - [[#bystar-photo-and-video-galleries][ByStar Photo and Video Galleries]]
+    - [[#bystar-genealogy-services][ByStar Genealogy Services]]
+    - [[#bystar-libre-content-self-publication-services][ByStar Libre Content Self-Publication Services]]
+  - [[#bystar-federated-services-examples][ByStar Federated Services Examples]]
+  - [[#bob-and-alices-bystar-digital-ecosystem][Bob And Alice's ByStar Digital Ecosystem]]
+- [[#thelibre-halaalvsproprietary-haraambattle][The Libre-Halaal vs. Proprietary-Haraam Battle]]
+  - [[#engineering-vs-business][Engineering vs. Business]]
+  - [[#war-of-ideas----war-of-words][War of Ideas -- War of Words]]
+- [[#joining-bystar][Joining ByStar]]
+  - [[#individually][Individually]]
+  - [[#en-masse][En Masse]]
+
+* The Libre-Halaal ByStar Digital Ecosystem
+
+
+The Libre-Halaal ByStar Digital Ecosystem model is fundamentally
+different from the American Proprietary Digital Ecosystem in every
+respect.
+
+In terms of ownership, there is no ownership: Libre-Halaal Services in
+software form are a communal public resource, with no patent, copyright
+or secrecy barriers to free access and usage by anyone.
+
+In terms of functionality, the software is open, so the services are
+completely transparent in operation. This transparency allows
+professional oversight by the engineering community, to verify the
+integrity of the service, ensuring that it in no way violates the
+interests of the user or the general public welfare.
+
+And in terms of policy, operation of the service is governed by a social
+contract, drafted with full representation and advocacy for the
+individual user and the general public welfare.
+
+The Libre model thus fully guarantees the critical civil liberties that
+are endangered under the proprietary model.
+
+By* Federation of Autonomous Libre Services are Internet Application
+Services that are internally transparent and focus on preservation of
+user's privacy and autonomy. By* stands against
+Facebook/Google/Yahoo/MSN/iCloud the same way that Linux stands against
+Microsoft Windows.
+
+This is very different from existing Internet services capabilities. The
+Internet landscape of today has arisen in a highly disorganized,
+unstructured way, driven by a multitude of uncoordinated commercial
+ventures. The existing services capabilities have been built in a
+completely ad hoc manner, based on immediate business expedience, rather
+than any sort of coherent design. The result is the Internet Services
+industry as it appears today: a multiplicity of functionally isolated,
+incompatible services. And while this may not be apparent to the
+everyday user, having never experienced anything different, this limits
+the capabilities of Internet services in many ways.
+
+By* is the model for a new generation of unified Internet services, far
+superior to the uncoordinated mishmash of services that exists today. It
+is designed for consistent, uniform interoperability across all types
+and manners of service usage. By* is the Internet services industry,
+done right.
+
+We now present an overview of our work and the contours of ByStar in 4
+regards -- Ideology, Model, Capabilities and Economics.
+
+** ByStar Ideology: The Libre-Halaal Philosophy
+
+
+A very important aspect of societal framework which has immediate impact
+on the shape of digital ecosystems are laws and models governing
+polyexistentials (knowledge, ideas, information, the digital entities).
+Societal Agreements governing all that is digital (and more broadly
+polyexistential) in the West are based on the IP regime. This has shaped
+the entirety of Western Digital Ecosystems.
+
+In contrast, ByStar is ab-initio driven by the ideology that morality
+and health of society should be the foundation of the ByStar digital
+ecosystem. The fundamental difference between ByStar ideology and the
+Proprietary American ideology is that in ByStar priorities,
+society/humanity comes first and profit/economics come second. In the
+Proprietary American priorities profit/economics comes first and above
+all else.
+
+In Figure [[#fig:bxIdeologyDocs][[fig:bxIdeologyDocs]]], we present a
+roadmap in forms of layers. Each layer has a document that addresses
+that concept. Each layer builds on the layers below. At the lowest layer
+lies moral and societal questions of right and wrong (halaal and
+haraam).
+
+*** Halaal and Haraam and the Libre-Halaal Label
+    :PROPERTIES:
+    :CUSTOM_ID: halaal-and-haraam-and-the-libre-halaal-label
+    :END:
+
+Our focus as engineers is to build the right thing.
+
+We introduce the sensitive and potent word "Halaal." We define this in
+the document titled:
+
+#+BEGIN_QUOTE
+  *Introducing Halaal and Haraam into Globish*\\
+  *Based on Moral Philosophy of Abstract Halaal*\\
+  [[http://www.by-star.net/PLPC/120039]] --- \cite{PLPC-120039}
+#+END_QUOTE
+
+We precisely define what we mean by "Halaal" and "Haraam" and the
+explicit context and scope of the "Libre-Halaal" label. We use the word
+Halaal carefully and consistently to emphasize that our work is anchored
+in morality.
+
+Briefly, philosophical halaal is "manifestation" of "moral
+sensibilities" relevant to a specific topic where "the set of actions"
+map to "right." And, philosophical haraam is "manifestation" of "moral
+sensibilities" relevant to a specific topic where "the set of actions"
+map to "wrong."
+
+We then focus on the halaal manner-of-existence of polyexistentials.
+There are things in nature that exist in singular and there are things
+that exist in multiples. That which exists in nature in singular, we
+call monoexistential. That which exists in nature in multiples, we call
+polyexistential.
+
+Increased importance of role of polyexistentials (knowledge, ideas,
+information, the digital domain) in our lives and their impact on
+society and humanity now requires analysis towards recognition of halaal
+and haraam for different forms of polyexistentials. And once we have
+recognized the halaal manner-of-existence of polyexistentials we need to
+label it.
+
+In the "Libre-Halaal" label, Libre indicates that:
+
+1. The scope of consideration of Halaal is manner-of-existence of
+   polyexistentials.
+
+2. We reject the Western IPR regime. That the natural right to copy and
+   the natural right to apply knowledge are the basis of our ideology.
+
+Halaal indicates that:
+
+1. We are rooted in philosophy and morality --- Not just economics.
+
+2. For each form of polyexistential, the manner-of-existence that permit
+   Professions to safeguard society and humanity are the Halaal
+   manner-of-existence for that polyexistential.
+
+*** Guardianship of Internet by the Engineering Profession
+    :PROPERTIES:
+    :CUSTOM_ID: guardianship-of-internet-by-the-engineering-profession
+    :END:
+
+In ByStar ideology, it is the responsibility of the Internet engineering
+profession to preserve autonomy and privacy of the individual and health
+of social and societal interactions.
+
+In order for the engineering profession to fulfill these
+responsibilities, certain societal agreements with respect to the
+manner-of-existence of software and Internet services need to be in
+place. We use the "Libre-Halaal" label to express the required societal
+agreements.
+
+In the Proprietary American Ideology, there is no Internet engineering
+profession responsibility -- engineers are instruments of business.
+Profit is the prime directive. As a result, manner-of-existence of
+software and Internet services is closed and restricted (proprietary),
+rooted in the Western IPR Regime.
+
+We draw a clear distinction between what Software Internet Engineering
+Profession means in the context of the Proprietary American Digital
+Ecosystem and what it means in the context of the Libre-Halaal ByStar
+Digital Ecosystem. In ByStar we use the term "profession" in the way it
+is understood in the East.
+
+The notion of a "profession" in the West consists of training and the
+acquisition of specialized skills, to perform specialized work, to
+create monetary income. The responsibility of a profession towards
+society at large does not factor significantly in this. Western society
+is mostly, if not totally, economically driven. The Western model of
+economically driven individuals existing within an industrial context
+considers only money and self-interest. Such broader concepts as
+society, profession, responsibility and respect are very weak in the
+Western model.
+
+In the East the word "profession" carries a greater meaning. It includes
+the Western meaning of a specialized skill set to perform work of value
+to others. But it also includes an agenda of trust and responsibility.
+The professional person is entrusted by society to maintain guardianship
+over an important aspect of life. Based on proper execution of this
+responsibility, the profession is respected.
+
+The primary author of this essay, attests that: for him as an engineer
+it is only in Iran that he is called "Mr. Engineer Banan." That has
+never happened to him in America, Canada, England, France, or anywhere
+else in his travels throughout the Western world. In return for all that
+respect, Mr. Engineer Banan owes the society something, doesn't he?
+
+So it is in this Eastern sense that we are here speaking of
+"professional responsibility."
+
+*** Nature of Polyexistentials: Basis for Abolishment of Western IPR
+Regime
+    :PROPERTIES:
+    :CUSTOM_ID: nature-of-polyexistentials-basis-for-abolishment-of-western-ipr-regime
+    :END:
+
+Central to our ideology and approach is full rejection of the Western
+so-called Intellectual Property Rights regime of copyright and patents.
+
+In a document titled:
+
+#+BEGIN_QUOTE
+  *The Nature of Polyexistentials:*\\
+  *Basis for Abolishment of The Western Intellectual Property Rights
+  Regime*\\
+  [[http://www.by-star.net/PLPC/120033]] --- \cite{PLPC-120033}
+#+END_QUOTE
+
+We analyze and discredit the Western Intellectual Property Rights regime
+based on the inherent nature of what it seeks to control and restrict --
+polyexistentials: all that can be learned and remembered and all that is
+digital.
+
+Polyexistentials are poly-possessable. Assignment of restrictive
+ownership to what is poly-possessable is in conflict with nature.
+
+The Western Intellectual Property ownership regime is in conflict with
+nature, it does not serve the ideal intended purpose of societal
+regulations, i.e. to balance rights equitably among conflicting
+constituencies. On the contrary, it has the effect of enriching a
+minority of powerful vested interests, to the very great detriment of
+society at large. The detrimental effects include the obstruction of
+engineering creativity, a distortion of the competitive business
+environment, and denial of the benefits thereof to the public.
+
+Many societies fully reject the basic concept of patents and copyright.
+Yet, the Western Intellectual Property ownership regime is portrayed by
+Westerners as universal and global. Since polyexistence and digital
+entities are inherently not restricted by borders, the nature of global
+Internet demands rejection of the Western Intellectual Property
+ownership regime.
+
+*** Libre-Halaal Software -- Halaal Manner-of-Existence of Software
+    :PROPERTIES:
+    :CUSTOM_ID: libre-halaal-software-halaal-manner-of-existence-of-software
+    :END:
+
+ [sec:Libre-HalaalSoftware--HalaalManner-of-ExistenceofSoftware]
+
+Next we focus on the correct manner-of-existence of software.
+
+We do this in a document titled:
+
+#+BEGIN_QUOTE
+  *Libre-Halaal Software*\\
+  *Defining Halaal Manner-Of-Existence Of Software*\\
+  [[http://www.by-star.net/PLPC/180044]] --- \cite{PLPC-180044}
+#+END_QUOTE
+
+Our definitions for Halaal manner-of-existence of software and Internet
+service are concrete and precise. These definitions are similar to the
+"Free Software" and "Open Source" definitions but are distinct. As
+engineers, our legitimacy for addressing this topic is our
+responsibility to the engineering profession and the engineering
+profession's responsibility to society.
+
+We have created the [[http://www.HalaalSoftware.org]] site for further
+cultivation of the concept of Libre-Halaal Software.
+
+Software (and more broadly Digital-Entities) is Libre-Halaal Software
+(and more broadly Libre-Halaal Digital-Entity) if it has the all of the
+following attributes:
+
+- *Halaal Criterion 1 -- Unrestricted Multi-Possessibility*. There are
+  no restrictions is possessing the software by anyone who wishes to
+  possess it -- There are no restrictions in copying and redistributing
+  copies.
+
+- *Halaal Criterion 2 -- Unrestricted Usage*. There are no restrictions
+  for using (running) the software.
+
+- *Halaal Criterion 3 -- Internal Transparency*. The source code of the
+  software is available to all software engineers to examine the
+  software and study how it works. Unless software is internal
+  transparent, the software cannot be trusted.
+
+- *Halaal Criterion 4 -- Modifiability*. Software engineers must be able
+  to modify the software, re-install the modified version and use the
+  modified version without restrictions. The available source code of
+  the software permits software engineers to change and enhancement it.
+
+- *Halaal Criterion 5 -- Proper Authorship Attribution*. The authorship
+  of the software is not misrepresented.
+
+Additionally, the software engineering profession requires from software
+engineers that the perpetuallity of all of the above be applied to all
+public modifications of the software. In other words, any modification
+or enhancement that is generally offered as software or service forever
+shall also have all of the above attributes.
+
+*** Libre-Halaal Internet Services -- Halaal Manner-of-Existence of
+Internet Services
+    :PROPERTIES:
+    :CUSTOM_ID: libre-halaal-internet-services-halaal-manner-of-existence-of-internet-services
+    :END:
+
+We then introduce the concept of "Libre-Halaal Services" and describe
+the model for guaranteeing internal transparency of Internet application
+services in a collaborative environment.
+
+In the document titled:
+
+#+BEGIN_QUOTE
+  *Libre-Halaal Internet Services:*\\
+  *Defining Halaal Manner-Of-Existence Of Internet Application
+  Services*\\
+  *A non-proprietary model for delivery of Internet services*\\
+  [[http://www.by-star.net/PLPC/180045]] --- \cite{PLPC-180045}
+#+END_QUOTE
+
+We have formulated a radically new, non-proprietary model for delivery
+of Internet services.
+
+Internet services are in essence access to remote execution of software.
+Fundamental Difference between software and service is Possessibility.
+Possession is personal and increases autonomy. Lack of possession
+decreases autonomy. Hence, software by nature is less of a threat than
+internet services are to autonomy.
+
+Libre-Halaal Services are an extension of the principles of Libre-Halaal
+software into the Internet services domain. They are Internet services
+that can be freely copied and reused by anyone. The Libre Services model
+exists in relation to the proprietary Internet services model of Apple,
+MSN, Yahoo and Google, in an analogous way to how GNU/Linux exists in
+relation to Microsoft Windows.
+
+We have created the [[http://www.LibreServices.org]] site for further
+cultivation of the concept of Libre-Halaal Services.
+
+** Applied Model ofFederations of Autonomous Libre Services
+   :PROPERTIES:
+   :CUSTOM_ID: applied-model-offederations-of-autonomous-libre-services
+   :END:
+
+In addition to being Libre-Halaal, ByStar is based on the Unified
+Autonomous model.
+
+The internet services industry as it exists today is chaotic,
+non-collaborative, uncoordinated, and falls far short of its true
+potential.
+
+In contrast to this, the ByStar Digital Ecosystem is based on a
+coherent, collaborative, scalable, generalized Internet Services model.
+
+Together, the Libre-Halaal Services and By* models have enormous
+implications. The Libre Services development model, and the By* unified
+services model can transform the internet completely, from the
+proprietary and ad hoc model of today into something far more powerful.
+
+The realization of this potential is large, complex and ambitious. It is
+far too large in scope to be accomplished by any one company acting
+alone, but instead can only be accomplished as a coordinated
+industry-wide effort. But the ByStar Libre-Halaal Services model enables
+precisely the necessary large-scale, distributed, cooperative effort.
+
+In the document titled:
+
+#+BEGIN_QUOTE
+  *The ByStar Applied Model*\\
+  *Of Federations of Autonomous Libre-Halaal Services*\\
+  [[http://www.by-star.net/PLPC/180015]] --- \cite{PLPC-180015}
+#+END_QUOTE
+
+We provide an overview of the model and design of ByStar Federation of
+Autonomous Services.
+
+Based on this model and structures, ByStar services can consistently
+grow and interact with other ByStar services to provide a rich and
+healthy environment.
+
+*** The ByStar Reference Model
+    :PROPERTIES:
+    :CUSTOM_ID: the-bystar-reference-model
+    :END:
+
+ByStar is based on a set of key abstractions, representing the major
+real-world entities that must be represented within a generalized web
+structure. These entities include such things as individual persons,
+businesses, physical locations, and events. For each such entity we have
+defined the structures and conventions required to represent,
+instantiate and name that entity in a unified, consistent way, and at a
+very large scale. We have then defined the major classes of services
+required to manage these entities, and to allow highly generalized
+interactions within and among each other.
+
+In the ByStar applied model, a real-world entity type (for example,
+individuals or a physical locations) maps on to a =ByStarEntityType=
+(=BxEntityType=). A real-world entity instance maps on to a
+=ByStarEntity= (=BxEntity=) All ByStar services are anchored in
+=ByStarEntity=.
+
+ByStarEntityTypes are structured hierarchically in a tree.
+
+=ByStarEntityType= is either a =ByStarAutonomousEntityType=\\
+or a =ByStarControlledEntityType=.
+
+=ByStarAutonomousEntityType= and =ByStarControlledEntityType= are either
+Classified or UnClassified.
+
+In this structure, persons identified by their name, are represented as:
+
+#+BEGIN_EXAMPLE
+    ByStarEntityType=
+       ByStarAutonomousEntityType.Classified.Person.ByName
+#+END_EXAMPLE
+
+Each =BxEntity= (an instance) is identified by =BxEntityId=.
+
+A =BxEntityId= is structured as:
+
+#+BEGIN_EXAMPLE
+    BxEntityId=RegistrarId+BxEntityType+InstanceId
+#+END_EXAMPLE
+
+All ByStarEntityIds are unique. The =InstanceId= is assigned by the
+=RegistrarId=.
+
+Each =BxEntity= can be activated within a\\
+=ByStarAutonomyAssertionVirtualMachine=\\
+(=BxAutonomyAssertionVirtualMachine=).\\
+The representation of a =BxEntity= in a
+=BxAutonomyAssertionVirtualMachine=\\
+is called a =ByStarServiceObject= (=BxServiceObject=).\\
+A =ByStarServiceObject= maps to a Unix account and a user-id.\\
+The =BxServiceObject= can have any =ByStarServiceCapability=\\
+that =BxAutonomyAssertionVirtualMachine= offers.
+
+Currently, ByStarServiceCapability is one of the capabilities enumerated
+in Figure [[#fig:bxEntityCapabilities][[fig:bxEntityCapabilities]]].
+
+Any =ByStarServiceCapability= can be bound to and exposed through a
+registered domain name.
+
+Based on the above structures, ByStar services can consistently grow and
+interact with other ByStar services to provide a rich and healthy
+environment.
+
+*** Domain Name Bindings of ByStarEntity
+    :PROPERTIES:
+    :CUSTOM_ID: domain-name-bindings-of-bystarentity
+    :END:
+
+Each =ByStarEntity= consists of specific information and a set of
+computing and communication services.
+
+Publicly, =BxEntity= is usually exposed throughout the internet at a
+selected DNS domain name. In the ByStar model, binding of a =BxEntity=
+to one or more domain names is designed to be very flexible. This
+flexibility relates to Service Portability but is broader. These notions
+are absent or very rare in the Proprietary American model.
+
+For instance, in the context of the examples described in Section
+ [[#ByStarEntityRealizationExamples][5]], Bob Smith is assigned
+BxEntityId=23.1.2.7.3.32674 which is canonically bound to the base
+domain name\\
+=5.bob.smith.byname.net=.
+
+ByStar permits Bob Smith to bind his BxEntity to other domain names, for
+example bobsmith.fr. In the ByStar BySMB service this is commonplace.
+Often, with the anticipation of obtaining example.com, example.bysmb.com
+and its BxEntity can be pre-generated. The owner can re-adjust the
+binding of BxEntity to a chosen domain name at will.
+
+Different information, different capabilities and different features of
+a =BxEntity= are usually bound to different domain names within a base
+domain name hierarchy.
+
+For example, Bob's imap service is at =imap.5.bob.smith.byname.net=, his
+genealogy service is at\\
+=geneweb.5.bob.smith.byname.net= and his synchronization repository
+(version control --- git) is at:\\
+=git.5.bob.smith.byname.net=.
+
+In cases where the owner asserts autonomy by possession of the service
+as a\\
+=BxAutonomyAssertionVirtualMachine=, ByStar provides the ability to
+selectively DNS resolve BxEntity domains locally. This then also permits
+fully local (non-networked) development and access to BxEntity -- based
+on existing DNS bindings.
+
+These flexible ByStar domain name to BxEntity bindings, and flexible DNS
+resolutions, are built on top of djbdns.
+
+*** ByStar Autonomous Services
+    :PROPERTIES:
+    :CUSTOM_ID: bystar-autonomous-services
+    :END:
+
+Internet services come in all shapes and sizes, serve all manner of
+purposes, and interact with each other and with societal entities in all
+manner of complex ways.
+
+In some cases a service may be associated exclusively with a particular
+societal entity, such as an individual, an organization, or a
+corporation. Such entities enjoy a high degree of autonomy within
+society, and so we refer to these as autonomous entities. When a service
+is associated uniquely with particular autonomous entity, we refer to
+the entity as the owner of the service.
+
+When a service is associated with a unique "owner", certain
+characteristics of the service are of particular concern to the owner.
+The service may include information of a personal or private nature, and
+the owner may wish to ensure that his/her/its privacy is protected. It
+is also important that the service reflect and maintain the autonomy of
+the owner, providing parallel freedom of action to that which the owning
+entity enjoys at large.
+
+Certainly, the privacy and autonomy of the owner are fully guaranteed if
+the owner exercises direct control over the functioning and provision of
+the service. In practice, an owner may or may not choose to exercise
+such direct control of the service. In many cases the owner of the
+service will leave the service provisioning in the hands of a
+second-party service provider. Nevertheless it is sufficient to
+guarantee the autonomy of the owner if the nature of the service is such
+that the owner could in principle take control of the service himself.
+
+We define an *autonomous libre-halaal service* as an Internet service
+associated with a unique owner, that the owner could in principle and at
+his option take control over and provide for himself.
+
+ByStar services are structured in two layers. (1) ByStar Autonomous
+Services and (2) ByStar Federated Services.
+
+Any ByStar Autonomous Service may also include ByStar Controlled
+Services.
+
+As noted, in many or most cases the service will be provided by a
+second-party service provider, who runs and administers the service on
+behalf of the owner. The autonomy of the owner requires that he is in no
+way tied to this or any other service provider. The general societal
+autonomy of the owner means that for any other type of
+service---banking, legal, medical---the owner is free to move from one
+provider to another, leaving no trace of himself behind with the
+previous provider.
+
+In the case of Internet services, similar principles apply. For a
+service to be an autonomous halaal service, it must satisfy the twin
+requirements of *portability*, and *non-retention*. Portability, meaning
+the owner can transport the entire service to a different service
+provider. And non-retention, meaning the previous provider must retain
+no trace of the owner's information.
+
+Specifically, when a second-party provider is providing the service on
+behalf of the owner, the service is an autonomous halaal service if the
+provider meets the following requirements:
+
+1. *Service and Data Portability*. On the instruction of the service
+   owner, the entire service can be transferred to a different service
+   provider. This could be another second-party provider, or the service
+   owner himself.
+
+2. *Service and Data Non-Retention*. At the instruction of the service
+   owner, the service provider must destroy all service-related
+   information (i.e., all owner data and log files).
+
+*** ByStar Controlled Services -- Internet of Things
+    :PROPERTIES:
+    :CUSTOM_ID: bystar-controlled-services-internet-of-things
+    :END:
+
+Any ByStar Autonomous Service may control certain "ByStar Controlled
+Services" that are his.
+
+A ByStar Controlled Service is a ByStarEntity which is in control of\\
+ByStarAutonomousEntity.
+
+As an example, consider an individual (say the author --
+[[http://mohsen.1.banan.byname.net]]) who hypothetically owns a house, a
+bicycle, a Nike fuel band and a tag for his suitcase.
+
+Virtual representation of these could be:
+
+1. A House -- [[http://info.1-98008-5807-10.bywhere.net]] -- where
+   ByWhere structure links control to its owner (a
+   ByStarAutonomousEntity).
+
+2. A Bicycle -- whose location information goes to it owner (a
+   ByStarAutonomousEntity) and not Google.
+
+3. A Nike Fuel Band -- which sends the exercise information to its
+   owner-individual.
+
+4. A tag for his suitcase -- which links to its owner (a
+   ByStarAutonomousEntity).
+
+Each of these as a ByStarControlledEntity will be controlled by the
+ByStarAutonomousEntity. All of these are ByStarEntity-s. The ones that
+are controlled, link to their controller. The ByStarAutonomousEntity has
+links to all the ByStarControlledEntity-s that it controls.
+
+So, we now have a framework for abstracting individuals as
+owners/controllers through ByStarAutonomousEntity. And we have
+abstractions for things to be owned and controlled through
+ByStarControlledEntity. And we have a framework for interaction of
+individuals/things and things/individuals through ByStar Federated
+Services.
+
+Now, compare the model of ownership and interactions of Things in
+Libre-Halaal ByStar Digital Ecosystem -- which is anchored in the
+autonomous individual -- with the Proprietary American Digital Ecosystem
+-- which is anchored in the Proprietary Corporation. There the
+proprietary internet service provider controls individuals also through
+Things.
+
+*** ByStar Federated Services
+
+
+Autonomous services and their controlled services may wish to engage in
+end-to-end interactions with other autonomous services. But in order to
+facilitate such interactions, involvement of some intermediary services
+may be needed.
+
+We refer to such enabling intermediary services as *federated services*,
+and we refer to the association of a federated service plus its
+subscribing autonomous services as a *federation of autonomous
+services*.
+
+The concept of Federated Services is layered above Autonomous Services
+and focuses on interactions amongst Autonomous Services and facilitation
+of information aggregation amongst ByStar Services.
+
+An example of a federated service for information aggregation is
+ByTopic.org where autonomously published content
+(documents/music/videos) is optionally centrally republished --
+autonomous and federated publications are fully consistent.
+
+*** ByStar Convivial User Environments -- Blee
+
+Users experience ByStar Services through ByStar User Environments.
+
+ByStar services can be accessed in a variety of ways. In addition to the
+traditional browser based model, ByStar provides for rich and deep
+Software-Service integration.
+
+Initially we are focusing on two convivial user environments for ByStar.
+
+Blee (ByStar Libre Emacs Environment) -- \cite{PLPC-180004} -- is a
+layer above Emacs that integrates ByStar platform (Debian GNU/Linux)
+capabilities into Emacs and provides for integration with ByStar
+Services.
+
+An overview of this User Environment is provided in:
+
+#+BEGIN_QUOTE
+  *Blee and BxGnome:*\\
+  *ByStar Software-Service Continuum Based Convivial User
+  Environments*\\
+  [[http://www.by-star.net/PLPC/180004]] --- \cite{PLPC-180004}
+#+END_QUOTE
+
+The deep integration between Libre-Halaal Software and Libre-Halaal
+Internet Services creates a Libre-Halaal Software-Service continuum, far
+superior in capability to any Proprietary/Haraam Software/Service
+combination.
+
+*** ByStar Content Generation and Content Publication Facilities
+    :PROPERTIES:
+    :CUSTOM_ID: bystar-content-generation-and-content-publication-facilities
+    :END:
+
+ByStar offers a rich environment and a number of facilities for content
+generation.
+
+Autonomous Content Publication facilities are a well established feature
+of ByStar.
+
+In the document titled:
+
+#+BEGIN_QUOTE
+  *ByStar Content Production and Publication Facilities*\\
+  [[http://www.by-star.net/PLPC/180038]] --- \cite{PLPC-180038}
+#+END_QUOTE
+
+we describe capabilities and features of ByStar content generation
+facilities and ByStar autonomous content publication facilities.
+
+Autonomous self-publication can then be augmented by information
+aggregation federated services such as ByTopic, ByContent and BySearch.
+
+** ByStar Architecture Principles
+   :PROPERTIES:
+   :CUSTOM_ID: bystar-architecture-principles
+   :END:
+
+The ByStar Digital Ecosystem is driven by a set of engineering
+architecture principles. We summarize some here.
+
+*** Tools for Conviviality
+    :PROPERTIES:
+    :CUSTOM_ID: tools-for-conviviality
+    :END:
+
+ [sec:ToolsForConviviality]
+
+Our primary criteria for software component selection and service design
+is "conviviality".
+
+By conviviality we refer to the concept of "Tools for Conviviality" as
+Ivan Illich introduced it.
+
+In the document titled:
+
+#+BEGIN_QUOTE
+  *Introducing Convivial Into Globish*\\
+  [[http://www.by-star.net/PLPC/120037]] --- \cite{PLPC-120037}
+#+END_QUOTE
+
+we introduce the concept of "Convivial" into Globish.
+
+Briefly, in Illich's words:
+
+#+BEGIN_QUOTE
+  Tools are intrinsic to social relationships. An individual relates
+  himself in action to his society through the use of tools that he
+  actively masters, or by which he is passively acted upon.
+
+  To the degree that he masters his tools, he can invest the world with
+  his meaning; to the degree that he is mastered by his tools, the shape
+  of the tool determines his own self-image. Convivial tools are those
+  which give each person who uses them the greatest opportunity to
+  enrich the environment with the fruits of his or her vision.
+  Industrial tools deny this possibility to those who use them and they
+  allow their designers to determine the meaning and expectations of
+  others. Most tools today cannot be used in a convivial fashion.
+#+END_QUOTE
+
+The dynamics of the Proprietary American Digital Ecosystem are such that
+they produce industrial tools.
+
+The Libre-Halaal ByStar Digital Ecosystem is designed to fully reside in
+the Libre-Halaal-Convivial quadrant, \cite{PLPC-180044}.
+
+*** ByStar End-To-End Philosophy vs Rise of the Middle
+    :PROPERTIES:
+    :CUSTOM_ID: bystar-end-to-end-philosophy-vs-rise-of-the-middle
+    :END:
+
+The dominant model of interaction between people and the model of access
+to information in the Proprietary American Digital Ecosystem is the
+centrally controlled Rise-of-the-Middle model -- which puts the service
+provider at the center of all interactions so that it can exploit users
+and traffic information.
+
+The ByStar model, in contrast, is end-to-end oriented and is based on
+the following principles:
+
+- Make Services Autonomous Whenever Possible (peer-to-peer oriented)
+
+- Invest and Focus on End-to-End communications facilities amongst
+  Autonomous Libre Services
+
+- When a Federated Service functions as an intermediary, limit its role
+  to the bare essential of hooking the two ends. Thereafter,
+  communications can be end-to-end.
+
+*** Choice of Software Components
+    :PROPERTIES:
+    :CUSTOM_ID: choice-of-software-components
+    :END:
+
+The Libre-Halaal software model is a flourishing creative environment,
+generating a constant stream of new and better software packages,
+duplicating and surpassing the capabilities of an ever-increasing
+portion of proprietary software territory. Indeed, for any particular
+item of functionality, there are typically multiple alternative free
+software packages available.
+
+In this environment the model for implementation of By* service
+functionality is not one of original software development. Rather, it is
+a process of intelligent selection and integration of functional
+components from the Libre-Halaal software creative environment.
+
+So, in creating By* our task has not been to write functional software
+components---in fact we have written almost none. Our main task has been
+to make careful engineering choices among the available free software
+components, and integrate these properly into the By* framework. In
+making these choices we consider not just the features and capabilities
+of each software component, but also the compatibility of the component
+within the overall By* architecture.
+
+The main considerations in our choice of software components have been:
+
+- Conviviality
+
+- Scalability
+
+- Libre-Halaal Mainstreamness
+
+- ByStar Consistency
+
+Virtually all the initial By* service functionality has been created
+this way. The following are some of the basic By* features that have
+been included by this process:
+
+- Debian GNU/Linux.
+
+- Base: djbdns, daemontools, ucspi, multilog, ...
+
+- Mail: qmail, courier, spamassassin, ezmlm, ...
+
+- Web: apache, zope, plone, geneweb, squirellmail, jquerymobile,
+  galleria, ...
+
+We will continue to select and incorporate additional software packages
+as these materialize within the free software environment. We will not
+create so much as we will harvest. Or to paraphrase the common industry
+dictum: /Good programmers write good software; great programmers reuse
+and integrate/.
+
+*** Confidentiality, Anonymity and Privacy
+    :PROPERTIES:
+    :CUSTOM_ID: confidentiality-anonymity-and-privacy
+    :END:
+
+By confidentiality we mean: ensuring that information is accessible only
+to those authorized to have access.
+
+By anonymity we mean: the characteristic of any interaction where an
+individual protects his or her identity from being shared with another
+person or with a third party in the context of particular
+communications. In other words, people know what you do but not who you
+are.
+
+By privacy we mean: the ability of an individual or group to seclude
+themselves or information about themselves and thereby reveal themselves
+selectively. In other words, people know who you are but not what you
+do.
+
+ByStar Autonomous Services are designed to provide tangible
+confidentiality, anonymity and privacy on a large scale. All of
+Libre-Halaal ByStar Digital Ecosystem has this inherent design.
+
+The basic assumption in the ByStar Digital Ecosystem is that all
+communications and traffic is subject to eavesdropping and traffic
+analysis.
+
+Fortunately, the nature of digital information is such that it is easier
+to encrypt than it is to decrypt.
+
+With nature on our side, ByStar Digital Ecosystem provides large scale
+countermeasures which include end-to-end data confidentiality and
+traffic flow confidentiality.
+
+ByStar federated services are governed by transparency and well
+understood logging expectations and audit trail protections which are
+oriented towards preserving privacy.
+
+All of this is in stark contrast to how confidentiality, anonymity and
+privacy are in the American Proprietary Digital Ecosystem. There, they
+have become a currency.
+
+** ByStar Central
+   :PROPERTIES:
+   :CUSTOM_ID: bystar-central
+   :END:
+
+The basic design of ByStar is very distributed. Services are generally
+autonomous and interactions are usually end-to-end.
+
+This means that ByStar is centrally light. But there are some
+fundamental, infrastructural, and foundational organizations and
+services that are required at the center of ByStar.
+
+The following infrastructure and foundational organizations have been
+put in place towards administration, guardianship, direction setting and
+facilitation of collaboration and growth of ByStar.
+
+*** Libre-Halaal Foundation - non-profit, non-proprietary
+    :PROPERTIES:
+    :CUSTOM_ID: libre-halaal-foundation---non-profit-non-proprietary
+    :END:
+
+[[http://www.freeprotocols.org/][Libre-Halaal Foundation]] is the
+non-profit legal entity that facilitates collaborative development,
+maintenance and administration of ByStar.
+
+*** Neda Communications, Inc. -- for-profit, non-proprietary
+    :PROPERTIES:
+    :CUSTOM_ID: neda-communications-inc.-for-profit-non-proprietary
+    :END:
+
+[[http://www.neda.com/][Neda Communications, Inc.]] is the for-profit
+legal entity that has developed Libre-Halaal ByStar Services. The core
+of ByStar software is subject to the Affero v3 General Public License
+and also the Neda Commercial License (dual licensed). Neda plans to
+profit from widespread usage of The Libre-Halaal ByStar Digital
+Ecosystem in a variety of ways.
+
+*** LibreCenter.net
+    :PROPERTIES:
+    :CUSTOM_ID: librecenter.net
+    :END:
+
+[[http://www.LibreCenter.net/][LibreCenter.net]] is Neda's data center.
+It is distinct and different from other data centers in that is built
+purely on Libre-Halaal Software. At this time most ByStar Services are
+hosted at Libre Center.
+
+*** BySource.org
+    :PROPERTIES:
+    :CUSTOM_ID: bysource.org
+    :END:
+
+[[http://www.BySource.org/][BySource.org]] is the Software Distribution
+Center for ByStar software in source form.
+
+*** ByBinary.org
+    :PROPERTIES:
+    :CUSTOM_ID: bybinary.org
+    :END:
+
+[[http://www.ByBinary.org/][ByBinary.org]] is the Software Distribution
+Center for ByStar software in binary form.
+
+*** ByStar Name and Number Assignment Authority
+    :PROPERTIES:
+    :CUSTOM_ID: bystar-name-and-number-assignment-authority
+    :END:
+
+ByStar Name and Number Assignment Authority is responsible for central
+assignment of names and numbers for ByStar services.
+
+Design of ByStar as an ab initio independent separate digital ecosystem
+permits ByStar to expand beyond the Proprietary American Digital
+Ecosystem. This is desired and possible for two main reasons. First,
+ByStar ideology may demand certain separations. Second, end-to-end
+purity of ByStar software-service continuum enables ByStar to do things
+that are not possible in the Proprietary American Digital Ecosystem.
+
+ByStar's Public Key Infrastructure (PKI) and the possibility of a ByStar
+Alternative DNS Root, and ByStar Digital Currency are some examples.
+
+** Current ByStar Services and Capabilities
+   :PROPERTIES:
+   :CUSTOM_ID: CurrentByStarServicesAndCapabilities
+   :END:
+
+<!-- ####+BEGIN: bx:dblock:global:file-insert :file
+"./bxEntityCapabilities-body-680.html" --> <table style= "border: 2px
+solid black; vertical-align: middle; width: 680px; height: 270px;"
+cellspacing="0"> <tbody> <tr> <td style="font-size: 11pt;
+background-color: rgb(240, 255, 255); text-align: center;">
+Foundational: </td> <td style="background-color: rgb(240, 255, 255);
+text-align: center;"> ByStarEntityID &nbsp; &nbsp; Shell Less Unix
+Account <br> &nbsp; &nbsp; PKCS Credentials <br> Matched UE Profile
+&nbsp; &nbsp; Autonomy Assertion Virtual Box </td> </tr> <tr> <td style=
+"background-color: #cccccc; text-align: center; height: 0px;"
+colspan="8"> <hr> </td> </tr> <tr> <td style="font-size: 11pt;
+background-color: rgb(255, 239, 213); text-align: center;"> Personal
+Communication: </td> <td style="background-color: rgb(255, 239, 213);
+text-align: center;">
+
+<a style="color: rgb(255, 99, 33);"
+href="http://www.by-star.net/PLPC/180039"> Email, Messaging, </a> &nbsp
+<a style="color: rgb(255, 99, 33);"
+href="http://www.by-star.net/PLPC/180039"> LibreTexting </a> </td> </tr>
+</tr> <tr> <td style= "background-color: #cccccc; text-align: center;
+height: 1px;" colspan="8"> <hr> </td> </tr> <tr> <td style="font-size:
+11pt; background-color: rgb(255, 250, 205); text-align: center;"> Web
+Features: </td> <td style="background-color: rgb(255, 250, 205);
+text-align: center;"> <a style="color: rgb(255, 99, 33);"
+href="http://www.by-star.net/PLPC/180038"> Plone (CMS), </a> &nbsp <a
+style="color: rgb(255, 99, 33);"
+href="http://www.by-star.net/PLPC/180038"> Galleries </a> <br> <a
+style="color: rgb(255, 99, 33);"
+href="http://www.by-star.net/PLPC/180038"> Autonomous Self-Publication
+</a> &nbsp <a style="color: rgb(255, 99, 33);"
+href="http://www.by-star.net/PLPC/180038"> Genealogy, </a> &nbsp <a
+style="color: rgb(255, 99, 33);"
+href="http://www.by-star.net/PLPC/180038"> WebMail </a> </td> </tr> <tr>
+<td style= "background-color: #cccccc; text-align: center; height: 0px;"
+colspan="8"> <hr> </td> </tr> <tr> <td style= "font-size: 11pt;
+background-color: rgb(205, 226, 167); text-align: center; height:
+35px;"> Private Network: </td> <td style="background-color: rgb(205,
+226, 167); text-align: center;"> Private Disk/Storage &nbsp Private Sync
+(Version Control) <br> ByStar Overlay Network Id </td> </tr> </tbody>
+</table>
+
+<!-- ####+END: -->
+
+ByStar Services are vast in scope. They are designed to be ever growing.
+Basic structures of ByStar are in place and many services are built or
+partially built. The Libre-Halaal Services collaborative framework
+allows for ByStar to grow dynamically.
+
+Thus far our focus has been in making sure that the overall architecture
+of the ByStar Digital Ecosystem is sound. We have been designing big and
+implementing gradually. A complete stable system is in place. It is now
+a matter of expanding and improving it.
+
+In ByStar today, for email we don't use gmail, yahoo, msn, outlook.com,
+aol or other proprietary centrally controlled mail services. We use
+BystarMail. Similarly, for web presence, content publication, photo and
+video galleries ByStar has existing capabilities in use.
+
+Here we provide a summary of where ByStar services stand today.
+
+A snapshot of the organizations, services and software that form the
+ByStar Digital Ecosystem today are shown in
+Figure [[#fig:LS-Assets][[fig:LS-Assets]]].
+
+Libre-Halaal Foundation central resources are shown in violet in
+Figure [[#fig:LS-Assets][[fig:LS-Assets]]]. Neda resources are shown on
+the top. Current ByStarEntity generators are shown under the "ByStar
+Autonomous" label and ByStar federated services are shown next to them.
+ByStar software consists of three major layers, these are shown in the
+lower part.
+
+The current status and growth of ByStar falls into four broad
+categories:
+
+1. Current capabilities of ByStarEntity (ByStarServiceObject) -- what
+   any autonomous services are capable of offering.
+
+2. Current span of ByStarEntity generators -- what type of autonomous
+   services (ByName, ByArtist, BySmb, etc) can be readily generated and
+   supported?
+
+3. Current scope of ByStar Federated Services.
+
+4. Scale of user base -- how many people are using ByStar?
+
+Current capabilities of =ByStarServiceObject=s are enumerated in
+Figure [[#fig:bxEntityCapabilities][[fig:bxEntityCapabilities]]].
+
+*** Current Capabilities of ByStarEntity
+    :PROPERTIES:
+    :CUSTOM_ID: current-capabilities-of-bystarentity
+    :END:
+
+Every ByStar autonomous service is anchored in a ByStarEntity. Every
+ByStarEntity can be provisioned to provide any of the current
+capabilities enumerated below.
+
+- ByStarEntityIds and credentials -- single password. [Unix account
+  based]
+
+- PKCS -- ByStar Public Key Infrastructure (PKI) -- Credentials.
+
+- Autonomous VPN services and ByStar overlay networks. [openvpn based]
+
+- Large amounts of autonomous disk space. [secure ftp based]
+
+- Autonomous synchronization and version control facilities. [git -- and
+  also svn and cvs based]
+
+- A Content Management System based website -- with both public and
+  private access. [Plone based]
+
+- A conventional public website. [Apache based]
+
+- Mobile websites. [jQuery Mobile based]
+
+- Content publication services. [Plone based]
+
+- A photo gallery. [galleria based]
+
+- Genealogy web services. [geneweb based]
+
+- Mail transfer service (MTA). [qmail based]
+
+- Mail access service. [Secure Courier IMAP based]
+
+- WebMail service. [SquirrelMail based]
+
+- Mailing list services. [Ezmlm based]
+
+- Mailing distributions. [Gnus based]
+
+- LibreTexting. [qmail and emsd based]
+
+- Matched User Environment Profile. [Blee based]
+
+Various other capabilities are in the works. With the ByStarEntity model
+in place, addition of features is quite simple.
+
+*** Current ByStar Services Sites
+    :PROPERTIES:
+    :CUSTOM_ID: current-bystar-services-sites
+    :END:
+
+Current ByStar services sites are depicted in
+Figure [[#fig:bystarDomainsTable][[fig:bystarDomainsTable]]].
+
+[[/lcnt/lgpc/bystar/permanent/common/figures/bystarDomainsTable.pdf]]
+
+ByStar services sites are organized by "types" in
+Figure [[#fig:bystarDomainsTable][[fig:bystarDomainsTable]]]. The
+/Autonomous ByStar Services/ are PALS (Possession Assertable Libre
+Services). An example of /Autonomous ByStar Services/ is ByName.net. The
+/ByStar Central/ sites support the infrastructure of ByStar.
+
+** Relationship With Existing Realities
+   :PROPERTIES:
+   :CUSTOM_ID: relationship-with-existing-realities
+   :END:
+
+The Libre Services and By* models are revolutionary, and can be expected
+to have a revolutionary effect on Internet usage. But these models are
+about service development and functionality, not about technological
+infrastructure. We are not reinventing the Internet protocols, or any
+other technical aspect of Internet operation.
+
+What is being presented here is not a tear-down and rebuild operation.
+
+Libre Services and By* imply no discontinuity, in terms of either
+technology or service deployment. The implementation model for Libre
+Services and By* is wholly evolutionary---there exists a continuous
+migration path from the proprietary model of today to the Libre model of
+tomorrow.
+
+*** Relationship With the Proprietary American Digital Ecosystem
+    :PROPERTIES:
+    :CUSTOM_ID: relationship-with-the-proprietary-american-digital-ecosystem
+    :END:
+
+Based on ideology, the Libre-Halaal ByStar Digital Ecosystem fully
+avoids proprietary software and proprietary services. We simply avoid
+The Proprietary American Digital Ecosystem.
+
+But, any and all of our services can be used in the Proprietary American
+model.
+
+The core of ByStar software is subject to the Affero v3 General Public
+License and also the Neda Commercial License (dual licensed).
+
+In a document titled:
+
+#+BEGIN_QUOTE
+  *A Strategy For Rapidly Becoming An Internet Application Service
+  Provider*\\
+  *Joining, Adopting and/or Licensing ByStar*\\
+  *A Public Unsolicited Proposal*\\
+  [[http://www.by-star.net/PLPC/180040]] --- \cite{PLPC-180040}
+#+END_QUOTE
+
+We describe various options for those interested in joining, adopting
+and/or licensing ByStar.
+
+*** Relationship With FOSS / FLOSS Movements
+    :PROPERTIES:
+    :CUSTOM_ID: relationship-with-foss-floss-movements
+    :END:
+
+Libre-Halaal ByStar Ideology and FOSS Ideology have a great deal in
+common and we closely collaborate with our FOSS brothers and sisters,
+but the ByStar Libre-Halaal Ideology is distinct.
+
+We invite our "Free Software" and "Open-Source" brothers and sisters to
+recognize that the "Libre-Halaal Software" model is a more complete
+model and that the "Libre-Halaal Software" label is a better label.
+
+*** Active Private Parallel Digital Ecosystems -- Example: NSA
+    :PROPERTIES:
+    :CUSTOM_ID: active-private-parallel-digital-ecosystems-example-nsa
+    :END:
+
+What we want to do on a very large scale and in the open has been done
+in medium-scale in private.
+
+For instance, the United State's National Security Agency (NSA) has
+created a separate parallel private digital ecosystem for its own use.
+NSA operates the private .nsa TLD; many NSA internal email addresses are
+of the form username@r21.r.nsa, mirroring the NSA organizational group
+structure. NSA has a particular ideology for its digital ecosystem which
+includes a large element of security, confidentiality and secrecy. The
+NSA, through use of its own particular software and services has created
+a completely different environment in parallel to the internet.
+
+The precedence of such private parallel digital ecosystems combined with
+the proven power of Libre-Halaal software demonstrates that widespread
+realization of ByStar digital ecosystem is very viable.
+
+*** Relationship With Piecemeal Privacy Oriented Software and Services
+    :PROPERTIES:
+    :CUSTOM_ID: relationship-with-piecemeal-privacy-oriented-software-and-services
+    :END:
+
+Some engineers kind of get it and have been trying to build various
+piecemeal privacy and autonomy software and services. Such efforts have
+always stayed limited in scope and scale. That is primarily for two
+reasons. First, the engineers have failed to connect with society. And
+second, piecemeal solutions don't work.
+
+We build on these piecemeal privacy and autonomy software and services
+and bring them into ByStar as integrated and complete large scale
+services.
+
+An example of a piecemeal privacy effort is PGP - Pretty Good Privacy. A
+bunch of engineers and technologists use it amongst themselves, but PGP
+never penetrated society at large. ByStar comes with Public Key
+Infrastructure (PKI) as an integral part of the service and equivalent
+of PGP is an inherent part of ByStar.
+
+Another example of a piecemeal privacy effort is:\\
+Tor [[https://www.torproject.org]].\\
+Tor attempts to accomplish traffic flow confidentiality just through
+redirection. Traffic flow confidentiality is an inherent part of ByStar
+which includes redirection plus layer 3 and layer 7 padding as well.
+
+** Understanding the Full ByStar Picture
+   :PROPERTIES:
+   :CUSTOM_ID: understanding-the-full-bystar-picture
+   :END:
+
+We have given you a brief summary of ByStar above.
+
+This summary is over simplified and captures the gist of a series of
+articles that we have developed to analyze and describe various aspects
+of ByStar.
+
+In ByStar Publications List -- [[http://www.by-star.net/bxPublications]]
+-- we provide pointers to ByStar related articles. These documents
+evolve as ByStar evolves, and the publications list will be kept up to
+date. The ByStar publications list is structured primarily for
+reference. Below we provide a description of how these documents
+collectively draw a comprehensive picture.
+
+The big ByStar picture is shown in Figure
+
+[[#fig:bystarEcosystemRoadmap][[fig:bystarEcosystemRoadmap]]].
+
+[[#fig:bystarEcosystemLayers][[fig:bystarEcosystemLayers]]].
+
+Each of the layers in this figure represents either a conceptual
+definition (shown in blue), or an actual software/service implementation
+(shown in orange). Each layer builds on the layers beneath.
+
+The layers in
+Figure [[#fig:bystarEcosystemLayers][[fig:bystarEcosystemLayers]]] are
+color coded. Each of the layers are either:
+
+- A Conceptual Layer. :: Representing concepts. Layers 1,2,3,4,7 and 8
+  are in Green, Blue and Yellow.
+
+- A Tangible Layer. :: Representing software/service implementations.
+  Layers 5 and 6 are in Orange and Brown.
+
+The tangible layers are bound by the conceptual layers underneath them
+and receive legitimacy from those concepts.
+
+The conceptual layers are validated by the tangible layers.
+
+The green layers (1 and 2) at the bottom are philosophical, moral and
+societal. Their scope is wider than the moral digital ecosystem that we
+are after. Generally speaking, these are not the domain of engineers.
+They are the domain of ethicists, philosophers and sociologists.
+
+The blue layers (3, 4 and 8) are philosophical, moral, societal, social
+and engineering aspects of digital ecosystems that require direct
+involvement of engineers and the engineering profession. The yellow
+layer (7) addresses economics and business dimensions of ByStar.
+
+The orange/brown layers (5 and 6) are engineering constructs. They are
+in-use software and in-use Internet application services.
+
+In ByStar Roadmap: [[http://www.by-star.net/bxRoadmap]]\\
+we provide a reading roadmap to ByStar related articles.
+
+Figure [[#fig:bystarEcosystemLayers][[fig:bystarEcosystemLayers]]] shows
+how the moral, legal, societal, engineering, economic and business
+dimensions of the ByStar Halaal Digital Ecosystem are layered as
+described above.
+
+Note the differing characterizations of this layering on the left and
+right. Both characterizations are valid, but they reflect entirely
+different viewpoints. The left side characterization is called "The
+Human Model," and reflects the philosophical, moral and societal
+elements of the model. It also identifies the role of the engineering
+profession in maintaining these elements. The right-side
+characterization is called "The Venture Capitalist Model," and is very
+different from the "The Human Model." The same elements are present, but
+now represent their significance as part of an investment strategy.
+Thus, the moral and societal concerns within the human model are now
+viewed as a sales and marketing opportunity. This makes clear that when
+dealing with Venture Capitalists, issues of morality and societal
+welfare are not the topic of discussion. In this regard Venture
+Capitalists need only understand that human beings are in fact concerned
+with vital moral considerations such as "privacy" and "autonomy," and
+that these considerations have powerful sales and marketing
+consequences. And that our unconventional strategy of overturning their
+sacred-cow -- Copyright and Patent model -- gives us a huge competitive
+advantage.
+
+The gigantic picture we have drawn in Figure
+ [[#fig:bystarEcosystemLayers][[fig:bystarEcosystemLayers]]] is a
+blueprint. It represents a complete framework for collaborative work
+towards an alternative to the current proprietary digital ecosystem. By
+aligning ourselves with the natural forces and dynamics of
+polyexistentials, and by means of large-scale unrestricted
+collaboration, we can achieve this.
+
+* ByStarEntity Realization Models--- By Way of Some Examples
+  :PROPERTIES:
+  :CUSTOM_ID: ByStarEntityRealizationExamples
+  :END:
+
+Let's explore ByStar in the context of a few examples. All these
+examples are completely fictional.
+
+Let's consider Bob Smith, a 46-year-old university researcher and his
+15-year-old daughter, Alice Smith. Alice is a freshman (9th grader) at
+Garfield High School (GHS).
+
+Bob wishes to have the following in ByStar.
+
+1. An Autonomous ByName BxEntity for his private and public use --
+   5.bob.smith.byname.net (he is the 5th bob.smith requesting byname
+   services).
+
+2. An Autonomous ByFamily BxEntity for his family --
+   8.smith.byfamily.net.
+
+3. A Controlled ByFamily BxEntity for his daughter Alice --
+   alice.8.smith.byfamily.net (Alice is a minor and Bob wishes to have
+   the option of overseeing her communications).
+
+4. A Controlled ByWhere BxEntity for their condo in Kirkland, WA --
+   1-98034-3681-74.bywhere.net (say for reliable driving directions).
+
+There are 3 different realization models for Autonomous BxEntity-s.
+
+- Shared Cloud Autonomous Model
+
+- Hosted Private Cloud Autonomous Model
+
+- Premise Private Cloud Autonomous Model
+
+Bob is concerned about privacy and prefers the "Hosted Private Cloud
+Autonomous Model" over the "Shared Cloud Autonomous Model". He trusts
+the ByStar model enough not to need the "Premise Private Cloud
+Autonomous Model".
+
+In the following sections we describe ByStarEntity realization models in
+the context of Bob and Alice's example.
+
+As we go through these examples, we will also be comparing them with
+their counterpart in the Proprietary American Digital Ecosystem.
+
+** ByStarEntityId Registrations
+   :PROPERTIES:
+   :CUSTOM_ID: bystarentityid-registrations
+   :END:
+
+Through ByStar, Bob needs to have an Autonomous ByName Registration, an
+Autonomous ByFamily Registration and a Controlled ByWhere Registration.
+
+So, Bob goes to http://www.byname.net and provides his name "Bob"
+"Smith" and an email address and agrees to conform to ByStar usage
+policies and in return, he receives:
+
+- 5.bob.smith.byname.net -- BxEntityId=23. 1.2.7.3 .32674 --
+  BxEntityIdPassword=
+
+Similarly, Bob goes to http://www.byfamily.net and provides his\\
+autonomous BxEntityId=23.1.2.7.3.32674 and gets:
+
+- 8.smith.byfamily.net -- BxEntityId=23. 1.2.9.5 .4689
+
+He then provides his autonomous BxEntityId=23.1.2.7.3.32674 and gets:
+
+- 1-98034-3681-74.bywhere.net -- BxEntityId=27. 2.2.6.4 .4689
+
+for a ByWhere controlled entity.
+
+All of the above were external registrations. In the ByStar model, Bob
+himself has now become a registrar for some ByStarEntitys.
+
+Under the 8.smith.byfamily.net domain, Bob now registers
+
+- bob.8.smith.byfamily.net -- as BxEntityId=23. 1.2.9.5 .4689 .1
+
+And
+
+- alice.8.smith.byfamily.net -- as BxEntityId=23. 1.2.9.5 .4689 .2
+
+Note that Bob has the option of using a single password and that all his
+ByStarEntityId are related.
+
+With his 5 ByStarEntityIds in place, Bob now can realize his
+ByStarEntitys in the model that he wishes.
+
+** Shared Cloud Autonomous Model
+   :PROPERTIES:
+   :CUSTOM_ID: shared-cloud-autonomous-model
+   :END:
+
+This model is very similar to how Gmail and other proprietary Internet
+services works. It involves Bob going to [[http://www.byname.net]],
+logging in and using the web service.
+
+Even at this level, there is a big difference between the Proprietary
+American Services and the Libre-Halaal ByStar Services. ByStar is
+transparent -- not opaque/dark/closed.
+
+Even in the shared cloud autonomous model, Bob has the choice of
+demanding that his entire service be delivered to him as a
+ByStarAutonomyAssertionVirtualMachine -- that means the entire software
+for the ByStar service and his entire data be delivered to him. And that
+the service provider abides by the "Service Data Portability" and
+"Service and Data Non-Retention" obligations.
+
+In the Gmail (and other) Proprietary American Model there are no such
+concepts.
+
+** Hosted Private Cloud Autonomous Model
+   :PROPERTIES:
+   :CUSTOM_ID: hosted-private-cloud-autonomous-model
+   :END:
+
+*** Obtaining A Generic ByStarAutonomyAssertionVirtualMachine
+    :PROPERTIES:
+    :CUSTOM_ID: ObtainingAGenericByStarAutonomyAssertionVirtualMachine
+    :END:
+
+Bob downloads to his laptop the latest generic
+ByStarAutonomyAssertionVirtualMachine. This has all the relevant
+software for ByStar services.
+
+The latest generic ByStarAutonomyAssertionVirtualMachine is available at
+[[http://www.bybinary.org]].
+
+*** Adding ByStarEntitys to the Generic
+ByStarAutonomyAssertionVirtualMachine
+    :PROPERTIES:
+    :CUSTOM_ID: AddingByStarEntitysToTheGenericByStarAutonomyAssertionVirtualMachine
+    :END:
+
+Bob then adds his ByStarEntitys to the
+ByStarAutonomyAssertionVirtualMachine.
+
+This involves Bob running the ByStarAutonomyAssertionVirtualMachine on
+his laptop and entering his ByStarEntityIds into the
+ByStarAutonomyAssertionVirtualMachine. All of Bob's ByStar services are
+now added to his ByStarAutonomyAssertionVirtualMachine.
+
+*** Choosing A ByStar Private Cloud Provider -- e.g. LibreCenter.net
+    :PROPERTIES:
+    :CUSTOM_ID: choosing-a-bystar-private-cloud-provider-e.g.-librecenter.net
+    :END:
+
+Bob then chooses a host for his Virtual Machine.
+
+His choice of ByStar Private Cloud Provider may be influenced by the
+location and laws of where the ByStar Private Cloud Provider operates
+in. If U.S. wiretap laws are too invasive to his taste, he may choose a
+ByStar Private Cloud Provider outside of the U.S. -- ByStar is very
+global.
+
+Let's say that Bob chose [[http://www.librecenter.net]].
+
+*** Running Your ByStarAutonomyAssertionVirtualMachine
+    :PROPERTIES:
+    :CUSTOM_ID: running-your-bystarautonomyassertionvirtualmachine
+    :END:
+
+Bob then transfers his fully configured
+ByStarAutonomyAssertionVirtualMachine to [[http://www.librecenter.net]]
+and runs the service.
+
+Bob is now in control of his own service.
+
+ByStar and LibreCenter have given Bob what is necessary and are
+supporting him. Bob is in possession of all of the service's software
+and the service is Bob's.
+
+** Premise Private Cloud Autonomous Model
+   :PROPERTIES:
+   :CUSTOM_ID: premise-private-cloud-autonomous-model
+   :END:
+
+In the Premise Private Cloud Autonomous Model, Bob is in possession and
+control of the entire software and the entire hardware for the service.
+
+*** Obtaining a Premise ByStar Host
+    :PROPERTIES:
+    :CUSTOM_ID: obtaining-a-premise-bystar-host
+    :END:
+
+A Premise ByStar Host is a computer with a static public IP address
+capable of running a ByStarAutonomyAssertionVirtualMachine. Any modern
+desktop or laptop would do just fine.
+
+*** Preparing the ByStarAutonomyAssertionVirtualMachine
+    :PROPERTIES:
+    :CUSTOM_ID: preparing-the-bystarautonomyassertionvirtualmachine
+    :END:
+
+Bob does what was previously described in Section
+[[#ObtainingAGenericByStarAutonomyAssertionVirtualMachine][5.3.1]] and
+Section
+[[#AddingByStarEntitysToTheGenericByStarAutonomyAssertionVirtualMachine][5.3.2]]
+to prepare his ByStarAutonomyAssertionVirtualMachine.
+
+A typical ByStarAutonomyAssertionVirtualMachine is capable of containing
+100s of ByStarEntitys.
+
+*** Running the Premise ByStarAutonomyAssertionVirtualMachine
+    :PROPERTIES:
+    :CUSTOM_ID: running-the-premise-bystarautonomyassertionvirtualmachine
+    :END:
+
+Bob then puts his ByStarAutonomyAssertionVirtualMachine on his "Premise
+ByStar Host" and runs it.
+
+Bob now possesses all of the software for ByStar,\\
+all of his own data,\\
+all of his logs and audit trails,\\
+and all of his services.
+
+This means real and tangible autonomy.
+
+Efforts like FreedomBox have been attempting to accomplish this in a
+more limited fashion. But in the ByStar model the Premise Private Cloud
+Autonomous Model is just one of many ways to realize tangible autonomy.
+
+** ByStar Autonomous Services Use and Access Examples
+   :PROPERTIES:
+   :CUSTOM_ID: bystar-autonomous-services-use-and-access-examples
+   :END:
+
+So, now Bob and Alice have a number of autonomous services in place.
+Now, let's see how they will be accessing them and what these ByStar
+Autonomous Services can do for Bob and Alice.
+
+*** Browser Based Web Service Usage
+    :PROPERTIES:
+    :CUSTOM_ID: browser-based-web-service-usage
+    :END:
+
+Most ByStar services are also offered as interactive web services just
+like traditional web services.
+
+The generic ByStarAutonomyAssertionVirtualMachine includes all ByStar
+user environments. A Tor-Firefox browser is all you need for ByStar
+interactive web services.
+
+But the preferred model for accessing ByStar services is through Blee.
+
+*** Blee Based Software-Service Continuum Usage
+    :PROPERTIES:
+    :CUSTOM_ID: blee-based-software-service-continuum-usage
+    :END:
+
+Blee (ByStar Libre Emacs Environment) is a layer above Emacs and Firefox
+that integrates ByStar platform (Debian GNU/Linux) capabilities into
+Emacs and provides for integration with ByStar Services.
+
+Use of Blee makes for a very rich software-service continuum model that
+does not have a real counterpart in the Proprietary American Digital
+Ecosystem.
+
+** Some Examples of ByStar Autonomous Services Capabilities
+   :PROPERTIES:
+   :CUSTOM_ID: some-examples-of-bystar-autonomous-services-capabilities
+   :END:
+
+With everything in place, let's see what are some of their ByStar
+capabilities. ByStar full set of Autonomous capabilities is determined
+by the capabilities of Bob's ByStarAutonomyAssertionVirtualMachine.
+These are already quite powerful and they are ever growing. Below we
+mention some.
+
+*** ByStar Email (Messaging)
+    :PROPERTIES:
+    :CUSTOM_ID: bystar-email-messaging
+    :END:
+
+In terms of email capabilities, ByStar email is similar to Gmail.
+However, ByStar email is very autonomous, very personal and very
+private.
+
+For example, note that email communications between Bob and Alice need
+not even leave Bob's ByStarAutonomyAssertionVirtualMachine.
+
+Beyond Gmail like capabilities, ByStar email service is inherently
+multi-address and multi-mailbox.
+
+For example Bob and Alice can each have a specific address for Alice's
+school -- Garfield High School (GHS). Those email addresses would be:
+
+- ghs@alice.8.smith.byfamily.net
+
+- ghs@bob.8.smith.byfamily.net
+
+Libre-Halaal ByStar email services are superior to Proprietary-Haraam
+email services both in capability and privacy.
+
+*** ByStar Public and Private Web Presence Services
+    :PROPERTIES:
+    :CUSTOM_ID: bystar-public-and-private-web-presence-services
+    :END:
+
+ByStar public and private web presence services are very rich. They are
+based on the Plone Content Management System.
+
+The URL for Bob's public web site would be
+http://5.bob.smith.byname.net. Its capabilities could be similar to the
+author of this document's site: [[http://mohsen.1.banan.byname.net]].
+
+*** ByStar Photo and Video Galleries
+    :PROPERTIES:
+    :CUSTOM_ID: bystar-photo-and-video-galleries
+    :END:
+
+Bob and Alice and their family's (8.smith.byfamily.net) photo gallery
+can be similar to what is in:
+[[http://mohsen.1.banan.byname.net/albums]].
+
+ByStar Photo and Video Galleries are based on galleria and are
+integrated into Plone. ByStar photo gallery capabilities comfortably
+compete with the likes of flickr and photo bucket. The difference of
+course is that Bob and Alice remain in control of their photos with
+ByStar.
+
+*** ByStar Genealogy Services
+    :PROPERTIES:
+    :CUSTOM_ID: bystar-genealogy-services
+    :END:
+
+Bob and Alice can build their genealogy tree in ways similar to what is
+in: [[http://mohsen.1.banan.byname.net/genealogy]].
+
+ByStar Genealogy Services are based on geneweb. ByStar genealogy
+capabilities comfortably compete with the likes of ancestry.com,
+FamilySearch, and MyTrees.com.
+
+The difference of course is that with ByStar, Bob and Alice remain in
+control of their genealogical personal information.
+
+*** ByStar Libre Content Self-Publication Services
+    :PROPERTIES:
+    :CUSTOM_ID: bystar-libre-content-self-publication-services
+    :END:
+
+Bob Smith is an academic. He writes and publishes a lot. Some of his
+thoughts and writings are outside of the mainstream. As a true academic,
+he prefers not to subject his publications to restrictions that the
+likes of IEEE and ACM demand. His publication philosophy is consistent
+with [[http://mohsen.1.banan.byname.net/publications][ByStar Publication
+Philosophy]].
+
+He uses the [[http://www.by-star.net/PLPC/180038][ByStar Content
+Production and Content Publication Facilities]] to write and publish.
+
+The list of his publications is similar to what is in:\\
+[[http://mohsen.1.banan.byname.net/publications/collections/bystarDE]].
+
+The access page to Bob's documents are similar to this document's:\\
+[[http://mohsen.1.banan.byname.net/PLPC/180016]].
+
+Bob, can optionally use ByStar Federated Services to achieve permanence
+and ease of search and access to his writings. See Section
+[[#ByStarFederatedServicesExamples][5.7]] for more details.
+
+So, ByStar has empowered Bob to be a true academic and avoid pseudo
+academic copyrighted publication traditions.
+
+** ByStar Federated Services Examples
+   :PROPERTIES:
+   :CUSTOM_ID: ByStarFederatedServicesExamples
+   :END:
+
+Bob has chosen to subject some of his publications to "Federated
+Re-Publication".\\
+He uses [[http://www.bycontent.net]] for that.
+
+ByContent is a ByStar Federated Service where ByStar self-published
+documents are republished.
+
+By submitting some of his documents and podcasts (videos) for ByContent
+re-publication, Bob accomplishes several things.
+
+ByContent Federated Services offer the following:
+
+- Permanence. If Bob's web site or he, himself disappear, his documents
+  still remain.
+
+- Large volume publication. ByContent runs on large computers with
+  access to lots of bandwidth. Bob need not worry about slowness of
+  access to his public videos and public writings.
+
+- ByContent republication maintains reference to original source.
+
+- Classification with peer content. Bob's content is classified and sits
+  next to other similar and competing content.
+
+- Searchability. Bob's content are now subject to search features of
+  [[http://www.BySearch.org]]
+
+ByContent is similar to YouTube, except that ByContent allows your
+content to be clearly referred back to you. All of ByContent is
+copyleft.
+
+** Bob And Alice's ByStar Digital Ecosystem
+   :PROPERTIES:
+   :CUSTOM_ID: bob-and-alices-bystar-digital-ecosystem
+   :END:
+
+Now, Let's look at this example in its entirety and see what Bob and
+Alice gained by buying into the ByStar Digital Ecosystem.
+
+First, they lost nothing. ByStar exists in parallel to the proprietary
+Internet. Everything that everybody else can do, Bob and Alice can do as
+well. Through peer pressure Alice will likely be pushed to join
+Facebook.
+
+But, Bob and Alice now have autonomous and private email. They
+communicate with everybody else in normal email fashion. But they are in
+control of their personal messages. When Bob deletes an email he knows
+that the email has truly been deleted.
+
+And Bob and Alice are truly in control of what they do with their
+photos, and their content on the Internet.
+
+That can be considered a good beginning. ByStar is evolutionary. ByStar
+is designed to be ever-growing and comprehensive.
+
+Are you ready to follow Bob and Alice's example?
+
+* The Libre-Halaal vs. Proprietary-Haraam Battle
+  :PROPERTIES:
+  :CUSTOM_ID: the-libre-halaal-vs.-proprietary-haraam-battle
+  :END:
+
+The inherent nature of software, Internet services and other
+polyexistentials is fundamentally at odds with these historical
+conventions of physical property (monoexistentials) ownership. Such
+constructs have the inherent potential for unlimited replicability and
+dissemination, and in the age of the Internet this potential is now
+fully realized.
+
+As a result the existing Western Intellectual Property conventions are
+coming under increasing stress, as the internal forces of replicability
+clash with the externally constraining Intellectual Property framework.
+The Intellectual Property regime is also coming under formal
+intellectual attack, as the dysfunctionality and true costs of this
+regime become increasingly apparent.
+
+In practice, the proprietary software and services model has engaged in
+various forms of bastardization of libre-halaal software model. Well
+recognized examples of such bastardizations include the service
+loophole, Tivoization, Appleization, and Androidization.
+
+In practice, open-source and free software movements represent
+compromising models and ideologies. For the most part they are
+comfortable being intertwined with the proprietary model. Full rejection
+of the proprietary model is considered radical in much of the
+open-source culture.
+
+In practice, with ByStar ideology we accomplish three things. First, we
+create a completely separate and independent digital ecosystem that
+fully rejects the proprietary model. Second, we take all possible
+measures to prevent bastardization of ByStar software and services by
+the proprietary model. Third, we create a comprehensive internet
+services business model which competes directly with the proprietary
+model in terms of revenue and profit.
+
+** Engineering vs. Business
+   :PROPERTIES:
+   :CUSTOM_ID: engineering-vs.-business
+   :END:
+
+Today, the internet services industry is owned entirely by business
+interests. But the Libre Services and By* initiatives represent a
+startling challenge to this: they represent a determined reassertion of
+proper guardianship of the internet by the Engineering Profession. This
+challenge will bring us into massive conflict with existing commercial
+interests, who will fight ferociously to defend the status quo.
+
+<<tab:engBusinessWarfare>>
+| Laws, Values      | Patent-free       | Patented                |
+| and Model         | Copyleft          | Copyright               |
+| Software and      | Transparency      | Secrecy                 |
+| User Env          | Public ownership  | Private ownership       |
+| Internet Services | Privacy, Autonomy | Surveillance Capitalism |
+| Content           | Guardianship      | Exploitation            |
+#+CAPTION: Engineering vs. Business Polarization
+
+Table [[#tab:engBusinessWarfare][1]] shows the many elements of contrast
+between Engineering and Business value systems. As the table makes
+clear, these two values systems are in complete and total conflict. We
+will fully exploit this conflict as the metaphor of a war: a war between
+Engineering and Business, in which Business represents exploitation of
+the Internet for profit, and Engineering represents guardianship of the
+Internet on behalf of the public.
+
+** War of Ideas -- War of Words
+   :PROPERTIES:
+   :CUSTOM_ID: war-of-ideas-war-of-words
+   :END:
+
+ByStar is huge, powerful, and viable. But given the entrenched vested
+interests in opposition to it, the promotion of ByStar amounts to a kind
+of war. ByStar has the inherent characteristics to prevail in this war
+-- we have moral superiority, intellectual correctness, and a construct
+that is viable in every respect: technological, economic, societal etc.
+But it is essential that all this be communicated effectively.
+
+The ByStar Wars (to coin a phrase) will be fought on multiple fronts.
+But as a revolutionary movement, to a significant extent it will be
+fought as a war of words and ideas. This means that the movement is
+advanced effectively in words, defended against attack in words, and
+extremely forceful and effective counter-attack made against its
+detractors.
+
+Please refer to [[http://www.by-star.net/bxPublications]] for a list of
+publications that we have felt is necessary for ByStar to be equipped
+with.
+
+* Joining ByStar
+  :PROPERTIES:
+  :CUSTOM_ID: joining-bystar
+  :END:
+
+<!-- ####+BEGIN: bx:dblock:global:file-insert :file
+"./joiningByStar-body-680.html" --> <table style= "border: 2px solid
+black; vertical-align: middle; width: 680px; height: 80px;"
+cellspacing="0"> <tbody> <tr> <td style= "vertical-align: middle;
+text-align: center; background-color: rgb(255, 239, 160); height: 25px;
+width: 100px;"> Joining </td> <td style="background-color: rgb(105, 226,
+167);" colspan="1"> &nbsp; </td> <td style= "font-size: 11pt;
+background-color: rgb(105, 226, 167); text-align: center; height: 25px;"
+colspan="6"> <b> A Strategy For <br> Rapidly Becoming An Internet
+Application Service Provider </b> </td> </tr> <tr> <td style=
+"vertical-align: middle; text-align: center; background-color: rgb(255,
+239, 160); height: 25px; width: 100px;"> ByStar </td> <td
+style="background-color: rgb(105, 226, 167);" colspan="1"> &nbsp; </td>
+<td style="background-color: rgb(105, 226, 167); text-align: center;">
+Joining, Adopting and/or Licensing ByStar </td> </tr> <tr> <td style=
+"vertical-align: middle; text-align: center; background-color: rgb(255,
+239, 160); height: 25px; width: 100px;"> As A Group </td> <td
+style="background-color: rgb(105, 226, 167);" colspan="1"> </td> <td
+style="background-color: rgb(105, 226, 167); text-align: center;"> <a
+style="color: rgb(255, 24, 21);"
+href="http://www.by-star.net/PLPC/180040/"> A Public Unsolicited
+Proposal </a> </td> </tr> </tbody> </table>
+
+<table style= "border: 2px solid black; vertical-align: middle; width:
+680px; height: 120px;" cellspacing="0"> <tbody> <tr> <td style=
+"vertical-align: middle; text-align: center; background-color: rgb(255,
+239, 160); height: 45px; width: 100px;"> &nbsp; </td> <td
+style="background-color: rgb(205, 226, 167);" colspan="1"> &nbsp; </td>
+<td style= "font-size: 11pt; background-color: rgb(205, 226, 167);
+text-align: left; height: 45px;" colspan="6"> <a style="color: rgb(255,
+99, 33);" href="http://www.by-star.net/PLPC/180016/"> (1) Recognize
+Importance Of Your Privacy and Autonomy </a> </td> </tr> <tr> <td style=
+"vertical-align: middle; text-align: center; background-color: rgb(255,
+239, 160); height: 45px; width: 100px;"> Joining </td> <td
+style="background-color: rgb(240, 255, 255);" colspan="1"> &nbsp; </td>
+<td style="background-color: rgb(240, 255, 255); text-align: left;"> <a
+style="color: rgb(165, 24, 21);" href="http://www.byname.net/"> (2)
+Obtain Your Private ByStar Account </a> </td> </tr> <tr> <td style=
+"vertical-align: middle; text-align: center; background-color: rgb(255,
+239, 160); height: 45px; width: 100px;"> ByStar </td> <td
+style="background-color: rgb(255, 239, 213);" colspan="1"> &nbsp; </td>
+<td style="background-color: rgb(255, 239, 213); text-align: left;"> <a
+style="color: rgb(255, 24, 21);" href="http://www.bybinary.org/"> (3)
+Obtain Your By*-Autonomous-Server (or Virtual-Server) </a> </td> </tr>
+<tr> <td style="vertical-align: middle; text-align: center;
+background-color: rgb(255, 239, 160); height: 45px;"> Individually </td>
+<td style="background-color: rgb(255, 250, 205);" colspan="1"> &nbsp;
+</td> <td style="background-color: rgb(255, 250, 205); text-align:
+left;"> <a style="color: rgb(255, 99, 33);"
+href="http://www.by-star.net/PLPC/180004/"> (4) Fully Control Your By*
+Account and Your Autonomous Service </a> </td> </tr> </tbody> </table>
+
+<!-- ####+END: -->
+
+Successful Digital Ecosystems are dynamic. They grow and are ever
+evolving.
+
+In the early stages of the evolution of ByStar we have adopted the
+strategy of limiting the size of our user base. A large active user base
+requires more support and is more difficult to maintain when service
+changes are frequent and when structural corrections may be needed.
+
+At a certain point we would invite the public at large to use fully
+automated services to obtain ByStar accounts and start using ByStar. But
+that is not now. ByStarEntityGenerator web services such as ByName.net
+ByAuthor.net ByWhere.net, etc. are in place. However, at this time we
+screen account requests individually.
+
+** Individually
+   :PROPERTIES:
+   :CUSTOM_ID: individually
+   :END:
+
+Any individual wishing to join ByStar can make a request and we usually
+activate accounts for these requests. Please see
+[[http://www.by-star.net/joiningByStar]] for details.
+
+** En Masse
+   :PROPERTIES:
+   :CUSTOM_ID: en-masse
+   :END:
+
+Groups of users (Autonomous ByStarEntities) such as students or staff at
+a university or High School or a church can join ByStar en masse and
+obtain ByName services. Other ByStarEntity abstractions can also join
+ByStar en masse and obtain associated ByStar services.
+
+In an article titled:
+
+#+BEGIN_QUOTE
+  *Joining, Adopting and/or Licensing ByStar*\\
+  *A Strategy For Rapidly Becoming An Internet Application Service
+  Provider*\\
+  *A Proposal*\\
+  [[http://www.by-star.net/PLPC/180040]]
+#+END_QUOTE
+
+We describe various options for those interested in joining, adopting
+and/or licensing ByStar.
+
+# Local Variables:
+# eval: (setq-local toc-org-max-depth 4)
+# End:
